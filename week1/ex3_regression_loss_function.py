@@ -9,17 +9,17 @@ def loss_function(num_samples, loss_name):
             loss = abs(pred - target)
             print("loss name : {}, sample : {}, pred : {}, target : {}, loss : {}".format(loss_name, i, pred, target, loss))
             sum =+ loss
-        Loss_MAE = sum/num_samples
+        Loss_MAE = sum / num_samples
         return f"final {loss_name}: {Loss_MAE}"
     
     if loss_name == "MSE":
         sum = 0
         for i in range(num_samples):
             target, pred = module_random()
-            loss = (pred - target)*(pred - target)
+            loss = (pred - target) * (pred - target)
             print("loss name : {}, sample : {}, pred : {}, target : {}, loss : {}".format(loss_name, i, pred, target, loss))
             sum =+ loss
-        Loss_MSE = sum/num_samples
+        Loss_MSE = sum / num_samples
         return f"final {loss_name}: {Loss_MSE}"
         
 def module_random():
@@ -29,6 +29,7 @@ def module_random():
 
 if __name__ == "__main__":
     num_samples = input("Input number of samples (integer number) which are generated: ")
+    
     if num_samples.isnumeric():
         if not "." in num_samples:
             num_samples = int(num_samples)
