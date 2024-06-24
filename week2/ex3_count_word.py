@@ -13,4 +13,6 @@ def count_word(file_path):
 
 if __name__ == "__main__":
     file_path = "data.txt"
-    print(count_word(file_path))
+    result = count_word(file_path)
+    assert result ["who"] == 3
+    print(result["man"])

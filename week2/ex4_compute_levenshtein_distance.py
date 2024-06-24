@@ -15,7 +15,9 @@ def compute_levenshtein(source, target):
     return result
 
 if __name__ == "__main__":
-    source = "kitten"
-    target = "sitting"
-    result = compute_levenshtein(source, target)
-    print(result)
+    # source = "kitten"
+    # target = "sitting"
+    # result = compute_levenshtein(source, target)
+    # print(result)
+    assert compute_levenshtein("hi", "hello") == 4.0
+    print(compute_levenshtein("hola", "hello"))

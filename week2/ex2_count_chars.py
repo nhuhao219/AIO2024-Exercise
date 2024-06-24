@@ -9,6 +9,6 @@ def count_chars(string):
 
 
 if __name__ == "__main__":
-    string = "smiles"
+    string = "Baby"
     counts = count_chars(string)
     print(counts)
