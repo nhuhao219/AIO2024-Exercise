@@ -13,6 +13,7 @@ class People(ABC):
     def get_yob(self):
         return self._yob
 
+
 class Student(People):
     def __init__(self, name, yob, grade):
         super().__init__(name, yob)
@@ -76,7 +77,6 @@ class Ward():
         return total / counter
 
 
-
 # test a
 student1 = Student(name="studentA", yob=2010, grade="7")
 student1.describe()
@@ -88,9 +88,9 @@ doctor1 = Doctor(name="doctorA", yob=1945, specialist="Endocrinologists")
 doctor1.describe()
 
 # test b
-teacher2 = Teacher(name = "teacherB", yob = 1995, subject = "History" )
-doctor2 = Doctor(name = " doctorB", yob = 1975, specialist = "Cardiologists" )
-ward1 = Ward(name = "Ward1")
+teacher2 = Teacher(name="teacherB", yob=1995, subject="History")
+doctor2 = Doctor(name=" doctorB", yob=1975, specialist="Cardiologists")
+ward1 = Ward(name="Ward1")
 ward1.add_person(student1)
 ward1.add_person(teacher1)
 ward1.add_person(teacher2)

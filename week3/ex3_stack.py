@@ -4,8 +4,8 @@ class MyStack:
         self.__data = []
 
     def __call__(self):
-        print(f"Capacity = {self.__cap}, length = {
-              len(self.__data)}, data = {self.__data}")
+        print(f"Capacity={self.__cap}, length={
+              len(self.__data)}, data={self.__data}")
 
     def is_full(self):
         if len(self.__data) == self.__cap:
